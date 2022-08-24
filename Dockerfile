@@ -1,4 +1,4 @@
-from ubuntu:20.04
+from ubuntu:22.04
 
 run apt-get update && apt-get upgrade -y
 run apt-get install -y curl gcc
