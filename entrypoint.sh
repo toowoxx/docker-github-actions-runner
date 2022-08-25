@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./config.sh --unattended $CONFIG_PARAMS
+./config.sh --work "/data/_work" $CONFIG_PARAMS
 
-./run.sh --unattended
+./run.sh
 
