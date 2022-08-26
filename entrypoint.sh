@@ -1,6 +1,11 @@
 #!/bin/bash
 
-./config.sh --work "/data/_work" $CONFIG_PARAMS
+WORKDIR="/data/_work"
+
+if [ ! -f "$WORKDIR/.configured" ]; then
+  ./config.sh --work "$WORKDIR" $CONFIG_PARAMS
+  touch $WORKDIR/.configured
+fi
 
 ./run.sh
 
