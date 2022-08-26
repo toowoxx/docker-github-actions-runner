@@ -8,7 +8,9 @@ run apt-get install -y \
     lsb-release \
     git \
 	wget \
-	bash
+	bash \
+	zip \
+	unzip
 
 # Docker
 run curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor --batch --yes -o /usr/share/keyrings/docker-archive-keyring.gpg
