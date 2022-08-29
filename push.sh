@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 docker build -t toowoxx/github-actions-runner:$1 -f Dockerfile .
 docker tag toowoxx/github-actions-runner:$1 toowoxx/github-actions-runner:latest
